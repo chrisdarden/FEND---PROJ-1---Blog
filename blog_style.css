@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2fr 2fr 0.3fr;
+    gap: 4px 4px;
+    grid-template-areas: "header header header header" "navbar post1 post2 post3" "navbar post4 post5 post6" "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.post1 {
+    grid-area: post1;
+}
+
+.post2 {
+    grid-area: post2;
+}
+
+.post3 {
+    grid-area: post3;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.post4 {
+    grid-area: post4;
+}
+
+.post5 {
+    grid-area: post5;
+}
+
+.post6 {
+    grid-area: post6;
+}
