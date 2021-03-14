@@ -1,12 +1,3 @@
-/* .header {
-    grid-area: header;
-    text-align: center;
-}
-
-.navbar {
-    grid-area: navbar;
-} */
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
