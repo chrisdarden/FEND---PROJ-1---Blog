@@ -1,13 +1,18 @@
-/* social media icons */
+@import url("/css/query.css");
+
+/* media query import */
+
+
+/* social media icons import */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 .fa {
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
     width: 25px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 5px;
 }
 
 .fa:hover {
@@ -37,8 +42,8 @@
 
 figure {
     border: 1px #cccccc solid;
-    padding: 4px;
-    margin: auto;
+    padding: 5px;
+    margin: 5px;
 }
 
 figcaption {
@@ -49,12 +54,13 @@ figcaption {
     text-align: center;
 }
 
+figure img {
+    height: 100px;
+    width: 100px;
+}
+
 
 /* end image caption formatting */
-
-.wrap {
-    z-index: 10;
-}
 
 #background-image {
     background-image: url("/img/bkg.jpg");
@@ -87,9 +93,19 @@ a {
     color: black;
 }
 
-p {
+blockquote {
+    right: 10px;
+    border-left: 5px solid rgb(0, 0, 0);
+    padding-left: 10px;
+    font-size: 1.8rem;
     text-align: left;
+    color: black;
 }
+
+
+/* p {
+    text-align: left;
+} */
 
 .footer-text {
     text-align: center;
@@ -123,12 +139,15 @@ li {
     text-transform: uppercase;
 }
 
+.container {}
+
 .card {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
 }
 
 .header {
