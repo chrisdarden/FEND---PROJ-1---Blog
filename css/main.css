@@ -1,0 +1,62 @@
+body {
+    background-color: bisque;
+}
+
+h1,
+h4 {
+    /* text-align: center; */
+    color: indigo;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: left;
+}
+
+a:hover {
+    color: blue;
+}
+
+button {
+    border-radius: 15%;
+    background-color: greenyellow;
+    font-size: larger;
+}
+
+.card-btn {
+    background-color: chocolate;
+    border-radius: 5%;
+    font-size: small;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.card {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin: 10px;
+}
