@@ -1,7 +1,7 @@
-@import "./media-queries.css";
-
 /* media query import */
 
+@import "./media-queries.css";
+@import "./blog_style.css";
 .grid-container {
     /* mobile view grid */
     display: grid;
@@ -17,20 +17,10 @@ h1 {
     letter-spacing: 2px;
 }
 
-h6 {
-    padding: 2px;
-    margin: 5px;
-}
-
 a {
     /* links */
     text-decoration: none;
     color: black;
-}
-
-a:hover {
-    /* link hover */
-    color: blueviolet;
 }
 
 li {
@@ -39,6 +29,27 @@ li {
     list-style: none;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+img {
+    text-align: center;
+}
+
+h6 {
+    padding: 2px;
+    margin: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+a:hover {
+    /* link hover */
+    color: blueviolet;
+}
+
+a:hover {
+    /* link hover */
+    color: blueviolet;
 }
 
 body {
@@ -96,6 +107,7 @@ button {
     top: 3px;
     float: left;
     font-size: larger;
+    width: 100px;
     border: 1px solid green;
     background-color: rgb(255, 253, 196);
     display: flex;
@@ -106,10 +118,13 @@ button {
     align-self: center;
 }
 
+
+/* 
 .button h3 {
-    /* text in dog button */
-    text-align: center;
-}
+    
+    text-align: center; 
+} 
+*/
 
 .pic {
     /* pic in dog button layout */
@@ -121,6 +136,10 @@ button {
     text-align: center;
     height: fit-content;
     width: fit-content;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5%;
+    margin: 4px;
 }
 
 .sidebar {

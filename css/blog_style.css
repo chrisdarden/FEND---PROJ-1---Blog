@@ -1,9 +1,13 @@
-.grid-container {
+@import "./main.css";
+@import "./media-queries.css";
+.grid-container-blog {
+    /* mobile view grid */
     display: grid;
-    grid-template-columns: 0.4fr 1.2fr 1fr 1fr;
-    grid-template-rows: 0.3fr 2fr 2fr 0.3fr;
-    gap: 4px 4px;
-    grid-template-areas: "header header header header" "navbar info info info" "navbar info info info" "footer footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr .2fr 2fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "header" "info" "footer";
+    padding-bottom: 2.5rem;
 }
 
 .info {
@@ -13,24 +17,6 @@
     gap: 0px 0px;
     grid-template-areas: "post1 post2 post3" "post4 post5 post6";
     grid-area: info;
-}
-
-h6 {
-    padding: 2px;
-    margin: 5px;
-    text-transform: capitalize;
-    text-align: center;
-}
-
-a {
-    /* links */
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-a:hover {
-    /* link hover */
-    color: blueviolet;
 }
 
 .card {
@@ -54,32 +40,25 @@ a:hover {
     text-align: center;
 }
 
-li {
-    /* list item (sidebar menu links) */
-    letter-spacing: 2px;
-    list-style: none;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
-img {
-    text-align: center;
-}
-
-body {
-    /* body div */
-    background-color: black;
-    color: whitesmoke;
-}
-
 .header {
     /* header div */
     grid-area: header;
     text-align: center;
 }
 
-.navbar {
-    grid-area: navbar;
+.nav {
+    grid-area: nav;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
+}
+
+
+/* 
+.nav {
+    grid-area: nav;
     text-align: center;
     font-size: large;
     text-transform: uppercase;
@@ -88,12 +67,7 @@ body {
     list-style: none;
     padding: 5px;
     text-align: left;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: wheat;
-}
+} */
 
 .info {
     display: grid;
@@ -149,7 +123,7 @@ body {
         grid-template-columns: 0.8fr 2fr 2fr 2fr;
         grid-template-rows: 0.3fr .3fr 3fr 0.3fr;
         gap: 1px 1px;
-        grid-template-areas: "header header header header" "navbar navbar navbar navbar" "info info info info" "footer footer footer footer";
+        grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "footer footer footer footer";
     }
     .content {
         grid-area: content;
@@ -160,7 +134,7 @@ body {
         align-content: center;
         align-items: center;
     }
-    .navbar {
+    .nav {
         text-align: center;
     }
 }
@@ -171,6 +145,6 @@ body {
         grid-template-columns: 2fr 2fr 2fr 2fr;
         grid-template-rows: 0.3fr .3fr 3fr 0.3fr;
         gap: 1px 1px;
-        grid-template-areas: "header header header header" "navbar navbar navbar navbar" "info info info info" "footer footer footer footer";
+        grid-template-areas: "header header header header" "nav nav nav nav" "info info info info" "footer footer footer footer";
     }
 }
