@@ -1,0 +1,155 @@
+/* .header {
+    grid-area: header;
+    text-align: center;
+}
+
+.navbar {
+    grid-area: navbar;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 0.5fr 2fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "header" "navbar" "content" "footer";
+}
+
+h1 {
+    /* The Joy of Fostering! h1 */
+    letter-spacing: 2px;
+}
+
+h6 {
+    padding: 2px;
+    margin: 5px;
+}
+
+a {
+    /* links */
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    /* link hover */
+    color: blueviolet;
+}
+
+li {
+    /* list item (sidebar menu links) */
+    letter-spacing: 2px;
+    list-style: none;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+body {
+    /* body div */
+    background-color: black;
+    color: whitesmoke;
+}
+
+.header {
+    /* header div */
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(255, 0, 170);
+}
+
+.navbar {
+    grid-area: navbar;
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    align-items: baseline;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.button {
+    /* flex box use */
+    grid-area: button;
+    right: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-color: teal;
+}
+
+.button a {
+    /* clickable link in dog button */
+    top: 3px;
+}
+
+.button h3 {
+    /* text in dog button */
+    text-align: center;
+}
+
+.pic {
+    /* pic in dog button layout */
+    width: 75px;
+    height: 75px;
+}
+
+.dog_bubble {
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.sidebar {
+    /* sidebar div */
+    grid-area: sidebar;
+    font-size: larger;
+    /*     margin: 10px; */
+    background-color: tomato;
+}
+
+.footer {
+    /* footer div */
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    /* position: inherit; */
+    background-color: violet;
+}
+
+@media (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1fr 1.5fr 0.5fr;
+        gap: 2px 2px;
+        grid-template-areas: "header header header header" "navbar content content content" "navbar content content content" "navbar content content content" "footer footer footer footer";
+    }
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+    }
+}
