@@ -1,7 +1,6 @@
-@import url("/css/query.css");
-
 /* media query import */
 
+@import url("/css/query.css");
 
 /* social media icons import */
 
@@ -64,6 +63,9 @@ figure img {
 
 /* end image caption formatting */
 
+
+/* background image div for opacity control */
+
 #background-image {
     background-image: url("/img/bkg.jpg");
     width: 100%;
@@ -81,8 +83,8 @@ figure img {
 
 h1 {
     text-align: center;
-    color: blue;
-    -webkit-text-stroke: 2px greenyellow;
+    color: rgb(133, 133, 0);
+    -webkit-text-stroke: 1px black;
 }
 
 h4 {
@@ -95,6 +97,10 @@ a {
     color: black;
 }
 
+a:hover {
+    color: blue;
+}
+
 blockquote {
     right: 10px;
     border-left: 5px solid rgb(0, 0, 0);
@@ -104,25 +110,22 @@ blockquote {
     color: black;
 }
 
-
-/* p {
-    text-align: left;
-} */
-
 .footer-text {
     text-align: center;
     font-size: larger;
 }
 
-a:hover {
-    color: blue;
-}
+
+/* navbar buttons */
 
 button {
     border-radius: 15%;
     background-color: greenyellow;
     font-size: large;
 }
+
+
+/* card buttons */
 
 .card-btn {
     background-color: greenyellow;
@@ -142,12 +145,12 @@ li {
 }
 
 .container {
-    /* overflow: hidden; */
     min-width: 0;
     min-height: 0;
 }
 
 .card {
+    /* div border for testing -- commented out on purpose */
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
