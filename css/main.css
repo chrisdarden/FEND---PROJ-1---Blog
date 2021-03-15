@@ -146,6 +146,7 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 2;
     text-align: left;
     padding: 10px;
 }
