@@ -52,13 +52,34 @@ figcaption {
 
 /* end image caption formatting */
 
-body {
-    background-color: bisque;
+.wrap {
+    z-index: 10;
+}
+
+#background-image {
+    background-image: url("/img/bkg.jpg");
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0.2;
+    position: fixed;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
 }
 
 h1 {
     text-align: center;
-    color: indigo;
+    color: blue;
+    -webkit-text-stroke: 2px greenyellow;
+}
+
+h4 {
+    color: blue;
+    font-size: larger;
 }
 
 a {
@@ -118,8 +139,15 @@ li {
 .content {
     grid-area: content;
 }
+
 .footer {
     grid-area: footer;
     text-align: center;
     margin: 10px;
+}
+
+.royalty {
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
 }
