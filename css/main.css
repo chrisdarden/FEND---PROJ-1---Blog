@@ -1,9 +1,14 @@
+@import "./media-queries.css";
+
+/* media query import */
+
 .grid-container {
+    /* mobile view grid */
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 0.5fr 2fr 0.2fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 2fr 0.2fr;
     gap: 1px 1px;
-    grid-template-areas: "header" "navbar" "content" "footer";
+    grid-template-areas: "header" "content" "footer";
     padding-bottom: 2.5rem;
 }
 
@@ -20,7 +25,7 @@ h6 {
 a {
     /* links */
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
 }
 
 a:hover {
@@ -38,30 +43,29 @@ li {
 
 body {
     /* body div */
-    background-color: black;
-    color: whitesmoke;
+    background-color: blanchedalmond;
+    color: black;
 }
 
-.header {
-    /* header div */
+header {
     grid-area: header;
     text-align: center;
 }
 
-.navbar {
-    grid-area: navbar;
+.nav {
+    grid-area: nav;
     text-align: center;
-    font-size: large;
-    text-transform: uppercase;
-    align-items: baseline;
-    text-decoration: none;
-    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: wheat;
-}
+
+/* .nav a {
+        text-decoration: none;
+        color: wheat;
+    } */
 
 .content {
     grid-area: content;
@@ -73,8 +77,8 @@ body {
     align-items: flex-start;
 }
 
-.button {
-    /* flex box use */
+
+/* button {
     grid-area: button;
     right: 20px;
     padding: 10px;
@@ -84,12 +88,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-start;
-    background-color: teal;
-}
 
-.button a {
+} */
+
+button {
     /* clickable link in dog button */
     top: 3px;
+    float: left;
+    font-size: larger;
+    border: 1px solid green;
+    background-color: rgb(255, 253, 196);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
 }
 
 .button h3 {
@@ -117,24 +131,24 @@ body {
     background-color: tomato;
 }
 
-.footer {
+footer {
     /* footer div */
     grid-area: footer;
     text-align: center;
-    padding: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
 }
 
-@media (min-width: 800px) {
+
+/* @media (min-width: 800px) {
     .grid-container {
         display: grid;
         grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
         grid-template-rows: 0.5fr 1.5fr 1fr 1.5fr 0.5fr;
         gap: 2px 2px;
-        grid-template-areas: "header header header header" "navbar content content content" "navbar content content content" "navbar content content content" "footer footer footer footer";
+        grid-template-areas: "header header header header" "nav content content content" "nav content content content" "nav content content content" "footer footer footer footer";
     }
     .content {
         grid-area: content;
@@ -145,4 +159,4 @@ body {
         align-content: center;
         align-items: center;
     }
-}
+} */

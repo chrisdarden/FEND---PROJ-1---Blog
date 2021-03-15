@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
+    grid-template-columns: 0.4fr 1.2fr 1fr 1fr;
     grid-template-rows: 0.3fr 2fr 2fr 0.3fr;
     gap: 4px 4px;
     grid-template-areas: "header header header header" "navbar info info info" "navbar info info info" "footer footer footer footer";
@@ -16,13 +16,10 @@
 }
 
 h6 {
-    text-transform: capitalize;
-    text-align: center;
-}
-
-h6 {
     padding: 2px;
     margin: 5px;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 a {
@@ -36,12 +33,37 @@ a:hover {
     color: blueviolet;
 }
 
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
 li {
     /* list item (sidebar menu links) */
     letter-spacing: 2px;
     list-style: none;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+img {
+    text-align: center;
 }
 
 body {
@@ -61,7 +83,7 @@ body {
     text-align: center;
     font-size: large;
     text-transform: uppercase;
-    align-items: baseline;
+    text-align: flex-start;
     text-decoration: none;
     list-style: none;
     padding: 5px;
@@ -91,23 +113,64 @@ body {
     height: 2.5rem;
 }
 
-
-}
 .post1 {
     grid-area: post1;
+    text-align: center;
 }
+
 .post2 {
     grid-area: post2;
+    text-align: center;
 }
+
 .post3 {
     grid-area: post3;
+    text-align: center;
 }
+
 .post4 {
     grid-area: post4;
+    text-align: center;
 }
+
 .post5 {
     grid-area: post5;
+    text-align: center;
 }
+
 .post6 {
     grid-area: post6;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.8fr 2fr 2fr 2fr;
+        grid-template-rows: 0.3fr .3fr 3fr 0.3fr;
+        gap: 1px 1px;
+        grid-template-areas: "header header header header" "navbar navbar navbar navbar" "info info info info" "footer footer footer footer";
+    }
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+    .navbar {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: 0.3fr .3fr 3fr 0.3fr;
+        gap: 1px 1px;
+        grid-template-areas: "header header header header" "navbar navbar navbar navbar" "info info info info" "footer footer footer footer";
+    }
 }

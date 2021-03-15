@@ -1,0 +1,19 @@
+@media (min-width: 800px) {
+    /* large view grid */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1fr 1.5fr 0.5fr;
+        gap: 2px 2px;
+        grid-template-areas: "header header header header" "nav content content content" "nav content content content" "nav content content content" "footer footer footer footer";
+    }
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+}
