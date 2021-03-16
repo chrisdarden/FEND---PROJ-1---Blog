@@ -55,7 +55,7 @@
         /* large view grid */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr .5fr;
-        grid-template-rows: 0.5fr .55fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.5fr .55fr 1fr 1fr 0.3fr;
         gap: 2px 2px;
         grid-template-areas: "header header nav nav" "blockquote blockquote blockquote blockquote" "content content content content" "content content content content" "footer footer footer footer";
     }
