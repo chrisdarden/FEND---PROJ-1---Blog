@@ -59,27 +59,32 @@
         gap: 2px 2px;
         grid-template-areas: "header header nav nav" "blockquote blockquote blockquote blockquote" "content content content content" "content content content content" "footer footer footer footer";
     }
-    /* .grid-container-blog {
+    .grid-container-blog {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 2.4fr 0.3fr;
         gap: 0px 0px;
         grid-template-areas: "header nav nav nav" "content content author-wrap author-wrap" "footer footer footer footer";
-    } */
-    .grid-container-blog {
-        /* large view grid */
+    }
+    /* .grid-container-blog {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.25fr .25fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.25fr 1fr 1fr 1fr 0.2fr;
         gap: 2px 2px;
-        grid-template-areas: "header header nav nav" "header header nav nav" "content content content content" "author-wrap author-wrap author-wrap author-wrap" "footer footer footer footer";
+        grid-template-areas: "header  nav" "content  content" "content author-wrap" "content author-wrap" "footer footer footer footer";
+    } */
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-area: nav;
     }
     .author-wrap {
         display: flex;
-        /* grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "avatar author-info"; */
+        grid-template-areas: "avatar author-info";
         grid-area: author-wrap;
     }
     article {
@@ -98,9 +103,6 @@
     }
     nav {
         grid-area: nav;
-    }
-    b {
-        font-size: 30px;
     }
     .content {
         grid-area: content;
@@ -129,18 +131,20 @@
 
 
 /* .header {
-        grid-area: header;
-    }
-    
-    .content {
-        grid-area: content;
-    }
-    .author-wrap {
-        grid-area: author-wrap;
-    }
-    .footer {
-        grid-area: footer;
-    } */
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.author-wrap {
+    grid-area: author-wrap;
+}
+
+.footer {
+    grid-area: footer;
+} */
 
 
 /* .grid-container-blog {

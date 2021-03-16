@@ -41,33 +41,6 @@
 /* end social media icons */
 
 
-/* image caption formatting */
-
-figure {
-    /* border: 1px #cccccc solid; */
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-}
-
-figcaption {
-    background-color: red;
-    color: white;
-    font-style: italic;
-    padding: 1px;
-    text-align: center;
-    font-size: 10px;
-}
-
-figure img {
-    height: 100px;
-    width: 100px;
-}
-
-
-/* end image caption formatting */
-
-
 /* background image div for opacity control */
 
 #background-image {
@@ -102,10 +75,6 @@ h4 {
     font-size: larger;
 }
 
-p {
-    font-size: 30px;
-}
-
 a {
     text-decoration: none;
     color: black;
@@ -113,6 +82,17 @@ a {
 
 a:hover {
     color: blue;
+}
+
+ul,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-transform: uppercase;
 }
 
 blockquote {
@@ -134,14 +114,38 @@ blockquote {
     width: 150px;
 }
 
-
-/* navbar buttons */
-
 button {
     border-radius: 15%;
     background-color: greenyellow;
     font-size: large;
 }
+
+
+/* image caption formatting */
+
+figure {
+    /* border: 1px #cccccc solid; */
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+figcaption {
+    background-color: red;
+    color: white;
+    font-style: italic;
+    padding: 1px;
+    text-align: center;
+    font-size: 10px;
+}
+
+figure img {
+    height: 100px;
+    width: 100px;
+}
+
+
+/* end image caption formatting */
 
 
 /* card buttons */
@@ -152,17 +156,6 @@ button {
     font-size: small;
 }
 
-ul,
-li {
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-}
-
 .training-pic {
     height: 250px;
     width: 100%;
@@ -170,7 +163,7 @@ li {
     border: 2px solid red;
 }
 
-.nav {
+nav {
     grid-area: nav;
 }
 
@@ -203,7 +196,13 @@ li {
 
 .content {
     grid-area: content;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
 }
+
+
+/* !!the code above breaks the layout!! */
 
 .footer {
     grid-area: footer;
