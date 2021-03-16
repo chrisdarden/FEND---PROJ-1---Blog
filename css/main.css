@@ -114,6 +114,9 @@ blockquote {
     width: 150px;
 }
 
+
+/* navbar buttons */
+
 button {
     border-radius: 15%;
     background-color: greenyellow;
@@ -163,7 +166,14 @@ figure img {
     border: 2px solid red;
 }
 
-nav {
+.training-pic {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.nav {
     grid-area: nav;
 }
 
