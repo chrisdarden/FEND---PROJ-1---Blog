@@ -19,6 +19,40 @@
     grid-area: footer;
 }
 
+.grid-container-blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.025fr 0.025fr 2.1fr 1.4fr 0.9fr;
+    gap: 0px 0px;
+    grid-template-areas: "header" "nav" "content" "author-wrap" "footer";
+}
+
+
+/* .header { grid-area: header; }
+  
+  .nav { grid-area: nav; }
+  
+  .content { grid-area: content; }
+  
+  .footer { grid-area: footer; } */
+
+.author-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "avatar author-info";
+    grid-area: author-wrap;
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.author-info {
+    grid-area: author-info;
+}
+
 @media (min-width: 800px) {
     .grid-container-main {
         /* large view grid */

@@ -87,6 +87,11 @@ h1 {
     -webkit-text-stroke: 1px black;
 }
 
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
 h4 {
     color: blue;
     font-size: larger;
@@ -142,6 +147,13 @@ li {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     text-transform: uppercase;
+}
+
+.training-pic {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
 }
 
 nav {
